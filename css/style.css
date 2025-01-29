@@ -1,0 +1,85 @@
+/* Custom styles */
+html {
+    scroll-behavior: smooth;
+}
+
+.shadow-hover:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Mobile menu transition */
+.mobile-menu {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Prevent content shift on mobile */
+body {
+    overflow-x: hidden;
+}
+
+/* Responsive padding adjustments */
+@media (max-width: 768px) {
+    .section {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+/* Improve form elements on mobile */
+input, textarea, button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Better touch targets on mobile */
+@media (max-width: 768px) {
+    button, 
+    input, 
+    textarea {
+        min-height: 44px;
+    }
+    
+    a {
+        padding: 0.5rem;
+    }
+}
+
+/* Improved floating animation keyframes */
+@keyframes float {
+    0% {
+        transform: translateY(0px) translateX(0px);
+    }
+    50% {
+        transform: translateY(-20px) translateX(5px);
+    }
+    100% {
+        transform: translateY(0px) translateX(0px);
+    }
+}
+
+/* Floating animations with better timing */
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delay-1 {
+    animation: float 6s ease-in-out 1.5s infinite;
+}
+
+.animate-float-delay-2 {
+    animation: float 6s ease-in-out 3s infinite;
+}
+
+.animate-float-delay-3 {
+    animation: float 6s ease-in-out 4.5s infinite;
+}
+
+/* Image hover effect */
+.hero-image {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.hero-image:hover {
+    opacity: 0.5;
+} 
