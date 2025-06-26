@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACE STUDENT</title>
+    <title>ACE — Abroad & Career Essentials | Study Abroad Consultancy</title>
+    <meta name="description" content="ACE - By Students, For Students. Expert study abroad consultancy for UK, Germany, USA, Canada, Netherlands. Unbiased guidance from international students who've been there.">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body class="bg-gray-50">
     <!-- Navigation -->
-    <nav class="bg-white shadow-lg fixed w-full z-10">
+    <nav class="bg-white shadow-lg fixed w-full z-50">
         <div class="max-w-7xl mx-auto px-4">
-            <div class="flex justify-between">
-                <div class="flex space-x-7">
-                    <div>
-                        <a href="#" class="flex items-center py-4">
-                            <span class="font-semibold text-gray-800 text-lg">ACE STUDENT</span>
-                        </a>
-                    </div>
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <a href="#" class="flex items-center py-4">
+                        <span class="font-bold text-blue-600 text-xl">ACE</span>
+                        <span class="font-semibold text-gray-800 text-lg ml-1">Student</span>
+                    </a>
                 </div>
                 <!-- Mobile menu button -->
                 <div class="md:hidden flex items-center">
@@ -37,194 +39,678 @@
                 </div>
                 <!-- Regular menu -->
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#services" class="py-4 px-2 text-gray-700 hover:text-blue-600">Services</a>
-                    <a href="#pricing" class="py-4 px-2 text-gray-700 hover:text-blue-600">Pricing</a>
-                    <a href="#contact" class="py-4 px-2 text-gray-700 hover:text-blue-600">Contact</a>
+                    <a href="#countries" class="py-4 px-2 text-gray-700 hover:text-blue-600 transition duration-300">Countries</a>
+                    <a href="#services" class="py-4 px-2 text-gray-700 hover:text-blue-600 transition duration-300">Services</a>
+                    <a href="#pricing" class="py-4 px-2 text-gray-700 hover:text-blue-600 transition duration-300">Pricing</a>
+                    <a href="#why-ace" class="py-4 px-2 text-gray-700 hover:text-blue-600 transition duration-300">Why ACE?</a>
+                    <a href="#contact" class="py-4 px-2 text-gray-700 hover:text-blue-600 transition duration-300">Contact</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Mobile menu -->
-    <div class="mobile-menu hidden md:hidden">
-        <a href="#services" class="block py-2 px-4 text-sm hover:bg-blue-600 hover:text-white">Services</a>
-        <a href="#pricing" class="block py-2 px-4 text-sm hover:bg-blue-600 hover:text-white">Pricing</a>
-        <a href="#contact" class="block py-2 px-4 text-sm hover:bg-blue-600 hover:text-white">Contact</a>
+    <div class="mobile-menu hidden md:hidden bg-white shadow-lg">
+        <a href="#countries" class="block py-3 px-4 text-sm hover:bg-blue-50 hover:text-blue-600 transition duration-300">Countries</a>
+        <a href="#services" class="block py-3 px-4 text-sm hover:bg-blue-50 hover:text-blue-600 transition duration-300">Services</a>
+        <a href="#pricing" class="block py-3 px-4 text-sm hover:bg-blue-50 hover:text-blue-600 transition duration-300">Pricing</a>
+        <a href="#why-ace" class="block py-3 px-4 text-sm hover:bg-blue-50 hover:text-blue-600 transition duration-300">Why ACE?</a>
+        <a href="#contact" class="block py-3 px-4 text-sm hover:bg-blue-50 hover:text-blue-600 transition duration-300">Contact</a>
     </div>
 
     <!-- Hero Section -->
-    <section class="pt-24 bg-gradient-to-r from-blue-500 to-blue-700 text-white relative overflow-hidden">
-        <!-- Floating images -->
+    <section class="pt-24 bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 text-white relative overflow-hidden">
+        <!-- Floating elements -->
         <div class="absolute w-full h-full">
-            <img src="images/student.jpg" alt="Student" class="absolute w-32 md:w-40 top-10 left-10 animate-float opacity-30">
-            <img src="images/book.jpg" alt="Book" class="absolute w-28 md:w-36 top-20 right-10 animate-float-delay-1 opacity-30">
-            <img src="images/graduation.jpg" alt="Graduation" class="absolute w-32 md:w-40 bottom-10 left-20 animate-float-delay-2 opacity-30">
-            <img src="images/laptop.jpg" alt="Laptop" class="absolute w-32 md:w-40 bottom-20 right-20 animate-float-delay-3 opacity-30">
+            <div class="absolute w-32 h-32 bg-white opacity-10 rounded-full top-10 left-10 animate-float"></div>
+            <div class="absolute w-24 h-24 bg-yellow-400 opacity-20 rounded-full top-20 right-10 animate-float-delay-1"></div>
+            <div class="absolute w-40 h-40 bg-green-400 opacity-10 rounded-full bottom-10 left-20 animate-float-delay-2"></div>
+            <div class="absolute w-28 h-28 bg-red-400 opacity-20 rounded-full bottom-20 right-20 animate-float-delay-3"></div>
         </div>
-        <!-- Existing hero content -->
-        <div class="max-w-7xl mx-auto px-4 py-16 relative z-10">
+        
+        <div class="max-w-7xl mx-auto px-4 py-20 relative z-10">
             <div class="text-center">
-                <h1 class="text-3xl md:text-6xl font-bold mb-4">Expert Academic Help</h1>
-                <p class="text-lg md:text-xl mb-8 px-4">Get Professional Academic Support from UK Top University Graduates</p>
-                <a href="#contact" class="inline-block bg-white text-blue-600 px-6 md:px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300">Get Started</a>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    By Students, For Students
+                    <span class="block text-3xl md:text-4xl mt-2 text-blue-200">Study Abroad Done Right</span>
+                </h1>
+                <p class="text-lg md:text-xl mb-8 px-4 max-w-3xl mx-auto text-blue-100">
+                    We've been international students ourselves. Get practical, unbiased support across every step — applications, projects, jobs, and accommodation.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#contact" class="inline-block bg-white text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition duration-300 shadow-lg">
+                        <i class="fas fa-rocket mr-2"></i>Get Started
+                    </a>
+                    <a href="#countries" class="inline-block bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition duration-300">
+                        <i class="fas fa-globe mr-2"></i>Explore Countries
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countries Section -->
+    <section id="countries" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Top Study Destinations</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Choose from the most popular study abroad destinations with our expert guidance</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- UK -->
+                <div class="country-card bg-gradient-to-br from-red-500 to-red-600 text-white rounded-xl p-8 shadow-lg hover:shadow-xl transition duration-300 cursor-pointer" data-country="uk">
+                    <div class="text-center">
+                        <div class="text-4xl mb-4">🇬🇧</div>
+                        <h3 class="text-2xl font-bold mb-3">United Kingdom</h3>
+                        <p class="text-red-100 mb-4">World-class universities, rich history, and diverse culture</p>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between">
+                                <span>Top Universities:</span>
+                                <span>Oxford, Cambridge, LSE</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Duration:</span>
+                                <span>1-4 years</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Work Rights:</span>
+                                <span>20 hrs/week</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Germany -->
+                <div class="country-card bg-gradient-to-br from-yellow-500 to-yellow-600 text-white rounded-xl p-8 shadow-lg hover:shadow-xl transition duration-300 cursor-pointer" data-country="germany">
+                    <div class="text-center">
+                        <div class="text-4xl mb-4">🇩🇪</div>
+                        <h3 class="text-2xl font-bold mb-3">Germany</h3>
+                        <p class="text-yellow-100 mb-4">Free education, strong economy, and innovation hub</p>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between">
+                                <span>Top Universities:</span>
+                                <span>TU Munich, Heidelberg</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Duration:</span>
+                                <span>2-4 years</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Work Rights:</span>
+                                <span>120 days/year</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- USA -->
+                <div class="country-card bg-gradient-to-br from-blue-500 to-blue-600 text-white rounded-xl p-8 shadow-lg hover:shadow-xl transition duration-300 cursor-pointer" data-country="usa">
+                    <div class="text-center">
+                        <div class="text-4xl mb-4">🇺🇸</div>
+                        <h3 class="text-2xl font-bold mb-3">United States</h3>
+                        <p class="text-blue-100 mb-4">Innovation capital, diverse programs, and career opportunities</p>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between">
+                                <span>Top Universities:</span>
+                                <span>MIT, Stanford, Harvard</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Duration:</span>
+                                <span>2-4 years</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Work Rights:</span>
+                                <span>20 hrs/week</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Canada -->
+                <div class="country-card bg-gradient-to-br from-red-400 to-red-500 text-white rounded-xl p-8 shadow-lg hover:shadow-xl transition duration-300 cursor-pointer" data-country="canada">
+                    <div class="text-center">
+                        <div class="text-4xl mb-4">🇨🇦</div>
+                        <h3 class="text-2xl font-bold mb-3">Canada</h3>
+                        <p class="text-red-100 mb-4">High quality of life, welcoming environment, and PR pathways</p>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between">
+                                <span>Top Universities:</span>
+                                <span>UofT, McGill, UBC</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Duration:</span>
+                                <span>2-4 years</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Work Rights:</span>
+                                <span>20 hrs/week</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Netherlands -->
+                <div class="country-card bg-gradient-to-br from-orange-500 to-orange-600 text-white rounded-xl p-8 shadow-lg hover:shadow-xl transition duration-300 cursor-pointer" data-country="netherlands">
+                    <div class="text-center">
+                        <div class="text-4xl mb-4">🇳🇱</div>
+                        <h3 class="text-2xl font-bold mb-3">Netherlands</h3>
+                        <p class="text-orange-100 mb-4">English-taught programs, bike-friendly cities, and innovation</p>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between">
+                                <span>Top Universities:</span>
+                                <span>TU Delft, UvA</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Duration:</span>
+                                <span>1-3 years</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Work Rights:</span>
+                                <span>16 hrs/week</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Australia -->
+                <div class="country-card bg-gradient-to-br from-green-500 to-green-600 text-white rounded-xl p-8 shadow-lg hover:shadow-xl transition duration-300 cursor-pointer" data-country="australia">
+                    <div class="text-center">
+                        <div class="text-4xl mb-4">🇦🇺</div>
+                        <h3 class="text-2xl font-bold mb-3">Australia</h3>
+                        <p class="text-green-100 mb-4">Beautiful landscapes, quality education, and work opportunities</p>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between">
+                                <span>Top Universities:</span>
+                                <span>Melbourne, Sydney</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Duration:</span>
+                                <span>1-4 years</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Work Rights:</span>
+                                <span>40 hrs/fortnight</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-16">
+    <section id="services" class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-2xl md:text-3xl font-bold text-center mb-12">Our Services</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-4">Public Health</h3>
-                    <p>Expert guidance in epidemiology, healthcare management, and public health policies.</p>
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Services We Provide</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Comprehensive support across every step of your study abroad journey</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">University Shortlisting</h3>
+                    <p class="text-gray-600 mb-4">Personalized university recommendations based on your profile, budget, and career goals.</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Program research & analysis</li>
+                        <li>• Entry requirements check</li>
+                        <li>• Application deadlines tracking</li>
+                    </ul>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-4">MBA</h3>
-                    <p>Comprehensive support in all MBA domains including marketing, operations, and strategy.</p>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Application Support</h3>
+                    <p class="text-gray-600 mb-4">Expert guidance for SOP, Resume, LOR, and all application documents.</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Statement of Purpose writing</li>
+                        <li>• Resume/CV optimization</li>
+                        <li>• Letter of Recommendation guidance</li>
+                    </ul>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-4">Computer Science & Software Engineering</h3>
-                    <p>Professional assistance in programming, networking, and system design.</p>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Assignment & Project Mentoring</h3>
+                    <p class="text-gray-600 mb-4">Academic support to help you excel in your studies abroad.</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Assignment writing assistance</li>
+                        <li>• Project guidance & mentoring</li>
+                        <li>• Research methodology support</li>
+                    </ul>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-4">Project Management</h3>
-                    <p>Expert assistance in project planning, execution, monitoring, and control methodologies.</p>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Part-time Job Support</h3>
+                    <p class="text-gray-600 mb-4">Help you find suitable part-time work opportunities while studying.</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Job search strategies</li>
+                        <li>• CV preparation for local market</li>
+                        <li>• Interview preparation</li>
+                    </ul>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-4">Engineering Management</h3>
-                    <p>Specialized support in engineering operations, team management, and technical leadership.</p>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Accommodation Help</h3>
+                    <p class="text-gray-600 mb-4">Assistance in finding safe and affordable accommodation options.</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Student housing options</li>
+                        <li>• Rental guidance & contracts</li>
+                        <li>• Location recommendations</li>
+                    </ul>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-4">Business Management</h3>
-                    <p>Professional guidance in business strategy, organizational behavior, and management principles.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-4">Accounting & Finance</h3>
-                    <p>Expert help with financial analysis, accounting principles, and financial management.</p>
-                </div>
-                <!-- <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-4">Software Engineering</h3>
-                    <p>Expert help with software development, architecture, and engineering principles.</p>
-                </div> -->
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-4">Mechanical Engineering</h3>
-                    <p>Specialized support in mechanics, thermodynamics, and engineering design.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-4">Renewable Energy</h3>
-                    <p>Professional guidance in sustainable energy systems and green technologies.</p>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Visa & Pre-departure</h3>
+                    <p class="text-gray-600 mb-4">Complete visa application support and pre-departure guidance.</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Visa application assistance</li>
+                        <li>• Document preparation</li>
+                        <li>• Pre-departure checklist</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Pricing Section -->
-    <section id="pricing" class="py-16 bg-gray-100">
+    <section id="pricing" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">Our Pricing</h2>
-            <div class="bg-white rounded-lg shadow-lg p-8 max-w-2xl mx-auto">
-                <div class="text-center mb-8">
-                    <h3 class="text-2xl font-bold mb-4">Standard Rate</h3>
-                    <p class="text-4xl font-bold text-blue-600">£80<span class="text-lg text-gray-600">/1000 words</span></p>
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Pricing Plans</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Choose the plan that best fits your study abroad journey</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Basic Plan -->
+                <div class="bg-white border-2 border-gray-200 rounded-xl p-8 shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold mb-4">Basic</h3>
+                        <div class="text-4xl font-bold text-blue-600 mb-2">£299</div>
+                        <p class="text-gray-600">Perfect for getting started</p>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            University shortlisting (5 universities)
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            SOP writing assistance
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            Resume optimization
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            Application form guidance
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            Email support
+                        </li>
+                    </ul>
+                    <button class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition duration-300">
+                        Choose Basic
+                    </button>
                 </div>
-                <ul class="space-y-4">
-                    <li class="flex items-center">
-                        <svg class="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        Dissertation Writing
-                    </li>
-                    <li class="flex items-center">
-                        <svg class="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        Project Management
-                    </li>
-                    <li class="flex items-center">
-                        <svg class="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        Finance Projects
-                    </li>
-                    <li class="flex items-center">
-                        <svg class="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        Coding Assignments
-                    </li>
-                    <li class="flex items-center">
-                        <svg class="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        And Many More
-                    </li>
-                </ul>
+
+                <!-- Complete Plan -->
+                <div class="bg-gradient-to-br from-blue-600 to-blue-700 text-white rounded-xl p-8 shadow-xl transform scale-105">
+                    <div class="text-center mb-8">
+                        <div class="bg-yellow-400 text-blue-900 px-3 py-1 rounded-full text-sm font-semibold inline-block mb-4">Most Popular</div>
+                        <h3 class="text-2xl font-bold mb-4">Complete</h3>
+                        <div class="text-4xl font-bold mb-2">£599</div>
+                        <p class="text-blue-100">Comprehensive support package</p>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-yellow-400 mr-3"></i>
+                            Everything in Basic
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-yellow-400 mr-3"></i>
+                            Unlimited university applications
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-yellow-400 mr-3"></i>
+                            LOR guidance & templates
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-yellow-400 mr-3"></i>
+                            Visa application support
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-yellow-400 mr-3"></i>
+                            Accommodation assistance
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-yellow-400 mr-3"></i>
+                            Pre-departure guidance
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-yellow-400 mr-3"></i>
+                            Priority support
+                        </li>
+                    </ul>
+                    <button class="w-full bg-white text-blue-600 py-3 rounded-lg hover:bg-gray-100 transition duration-300 font-semibold">
+                        Choose Complete
+                    </button>
+                </div>
+
+                <!-- Add-ons -->
+                <div class="bg-white border-2 border-gray-200 rounded-xl p-8 shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold mb-4">Add-ons</h3>
+                        <div class="text-4xl font-bold text-blue-600 mb-2">£99</div>
+                        <p class="text-gray-600">Additional services</p>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            Assignment mentoring (per assignment)
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            Job search assistance
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            Interview preparation
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            Document translation
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            Emergency support
+                        </li>
+                    </ul>
+                    <button class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition duration-300">
+                        Add Services
+                    </button>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section class="py-16">
+    <!-- Why ACE Section -->
+    <section id="why-ace" class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4">
-            <div class="text-center">
-                <h2 class="text-3xl font-bold mb-8">Our Experience</h2>
-                <p class="text-lg mb-8">With 4 years of Academic Projects help experience, we have helped many students across the world achieve up to 90% marks. Our team consists of graduates from top UK universities, ensuring 100% reliability and quality.</p>
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Why Choose ACE?</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">We're different because we've walked the same path you're about to take</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="space-y-8">
+                        <div class="flex items-start">
+                            <div class="bg-blue-600 text-white p-3 rounded-full mr-4 flex-shrink-0">
+                                <i class="fas fa-users text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">No University Tie-ups</h3>
+                                <p class="text-gray-600">We're completely independent. Our recommendations are based on what's best for YOU, not what earns us commissions.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-blue-600 text-white p-3 rounded-full mr-4 flex-shrink-0">
+                                <i class="fas fa-graduation-cap text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">We've Been There</h3>
+                                <p class="text-gray-600">Our team consists of international students who've successfully navigated the study abroad journey. We understand your challenges firsthand.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-blue-600 text-white p-3 rounded-full mr-4 flex-shrink-0">
+                                <i class="fas fa-handshake text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Practical, Unbiased Support</h3>
+                                <p class="text-gray-600">From applications to accommodation, we provide honest, practical advice based on real experience, not just theory.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-blue-600 text-white p-3 rounded-full mr-4 flex-shrink-0">
+                                <i class="fas fa-clock text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">24/7 Support</h3>
+                                <p class="text-gray-600">We understand time zones and deadlines. Our support team is available whenever you need us.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold mb-6 text-center">What Our Students Say</h3>
+                    <div class="space-y-6">
+                        <div class="border-l-4 border-blue-600 pl-4">
+                            <p class="text-gray-600 italic mb-2">"ACE helped me get into my dream university in Germany. Their practical advice about accommodation and part-time work was invaluable."</p>
+                            <p class="font-semibold">- Priya, MSc in Computer Science</p>
+                        </div>
+                        <div class="border-l-4 border-blue-600 pl-4">
+                            <p class="text-gray-600 italic mb-2">"Unlike other consultancies, ACE gave me honest advice about which universities were actually worth applying to."</p>
+                            <p class="font-semibold">- Ahmed, MBA Student</p>
+                        </div>
+                        <div class="border-l-4 border-blue-600 pl-4">
+                            <p class="text-gray-600 italic mb-2">"The assignment mentoring service helped me maintain my grades while adjusting to a new academic system."</p>
+                            <p class="font-semibold">- Sarah, Engineering Student</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-gray-100">
+    <section id="contact" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">Contact Us</h2>
-            <div class="max-w-xl mx-auto bg-white rounded-lg shadow-lg p-8">
-                <div class="space-y-4">
-                    <div>
-                        <h3 class="text-lg font-semibold mb-2">Email:</h3>
-                        <p class="text-blue-600">help.aceassignment@gmail.com</p>
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Get Started Today</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Ready to begin your study abroad journey? Let's talk about your dreams and how we can help make them reality.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <div class="bg-blue-600 text-white p-3 rounded-full mr-4">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Email</h4>
+                                <p class="text-blue-600">help.aceassignment@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="bg-green-600 text-white p-3 rounded-full mr-4">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">WhatsApp</h4>
+                                <p class="text-green-600">+44 700 000 0000</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="bg-blue-600 text-white p-3 rounded-full mr-4">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Response Time</h4>
+                                <p class="text-gray-600">Within 24 hours</p>
+                            </div>
+                        </div>
                     </div>
-                    <!-- <div>
-                        <h3 class="text-lg font-semibold mb-2">Phone:</h3>
-                        <p class="text-blue-600">+44 (0) 700000000</p>
-                    </div> -->
+                    
+                    <div class="mt-8">
+                        <h4 class="font-semibold mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="bg-blue-400 text-white p-3 rounded-full hover:bg-blue-500 transition duration-300">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="bg-pink-600 text-white p-3 rounded-full hover:bg-pink-700 transition duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="bg-blue-700 text-white p-3 rounded-full hover:bg-blue-800 transition duration-300">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <form class="mt-8 space-y-4" id="contactForm">
-                    <div>
-                        <label class="block text-gray-700 mb-2">Name*</label>
-                        <input type="text" name="user_name" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
-                    </div>
-                    <div>
-                        <label class="block text-gray-700 mb-2">Email*</label>
-                        <input type="email" name="user_email" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
-                    </div>
-                    <div>
-                        <label class="block text-gray-700 mb-2">Subject/Course*</label>
-                        <input type="text" name="subject" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
-                    </div>
-                    <div>
-                        <label class="block text-gray-700 mb-2">Word Count</label>
-                        <input type="number" name="word_count" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
-                    </div>
-                    <div>
-                        <label class="block text-gray-700 mb-2">Deadline</label>
-                        <input type="date" name="deadline" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
-                    </div>
-                    <div>
-                        <label class="block text-gray-700 mb-2">Message*</label>
-                        <textarea name="message" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" rows="4" placeholder="Please describe your assignment requirements..."></textarea>
-                    </div>
-                    <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300">Send Message</button>
-                </form>
+                
+                <div class="bg-white border-2 border-gray-200 rounded-xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold mb-6">Send Us a Message</h3>
+                    <form class="space-y-6" id="contactForm">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-gray-700 mb-2 font-semibold">Name *</label>
+                                <input type="text" name="user_name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2 font-semibold">Email *</label>
+                                <input type="email" name="user_email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200">
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-gray-700 mb-2 font-semibold">Current Education</label>
+                                <select name="current_education" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200">
+                                    <option value="">Select your current level</option>
+                                    <option value="high_school">High School</option>
+                                    <option value="bachelors">Bachelor's Degree</option>
+                                    <option value="masters">Master's Degree</option>
+                                    <option value="phd">PhD</option>
+                                    <option value="working">Working Professional</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2 font-semibold">Target Country *</label>
+                                <select name="target_country" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200">
+                                    <option value="">Select country</option>
+                                    <option value="uk">United Kingdom</option>
+                                    <option value="germany">Germany</option>
+                                    <option value="usa">United States</option>
+                                    <option value="canada">Canada</option>
+                                    <option value="netherlands">Netherlands</option>
+                                    <option value="australia">Australia</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 mb-2 font-semibold">Preferred Intakes</label>
+                            <select name="preferred_intakes" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200">
+                                <option value="">Select intake</option>
+                                <option value="fall_2024">Fall 2024</option>
+                                <option value="spring_2025">Spring 2025</option>
+                                <option value="fall_2025">Fall 2025</option>
+                                <option value="spring_2026">Spring 2026</option>
+                                <option value="not_sure">Not sure yet</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 mb-2 font-semibold">Message *</label>
+                            <textarea name="message" required rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200" placeholder="Tell us about your study abroad goals, preferred programs, or any questions you have..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition duration-300 font-semibold text-lg">
+                            <i class="fas fa-paper-plane mr-2"></i>Send Message
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <p>&copy; 2025 ACE Assignment Help. All rights reserved.</p>
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">ACE Student</h3>
+                    <p class="text-gray-300 mb-4">By students, for students. Your trusted partner in the study abroad journey.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#" class="hover:text-white transition duration-300">University Shortlisting</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-300">Application Support</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-300">Visa Assistance</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-300">Accommodation Help</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Countries</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#" class="hover:text-white transition duration-300">United Kingdom</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-300">Germany</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-300">United States</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-300">Canada</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>help.aceassignment@gmail.com</li>
+                        <li>+44 700 000 0000</li>
+                        <li>24/7 Support Available</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>&copy; 2025 ACE — Abroad & Career Essentials. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
