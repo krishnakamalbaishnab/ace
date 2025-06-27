@@ -26,7 +26,16 @@ document.querySelectorAll('.country-card').forEach(card => {
             'usa': 'United States',
             'canada': 'Canada',
             'netherlands': 'Netherlands',
-            'australia': 'Australia'
+            'australia': 'Australia',
+            'ireland': 'Ireland',
+            'france': 'France',
+            'sweden': 'Sweden',
+            'new_zealand': 'New Zealand',
+            'finland': 'Finland',
+            'singapore': 'Singapore',
+            'japan': 'Japan',
+            'south_korea': 'South Korea',
+            'italy': 'Italy'
         };
         
         // Scroll to contact form and pre-fill country

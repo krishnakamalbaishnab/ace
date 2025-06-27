@@ -277,6 +277,96 @@ async def get_countries():
             "duration": "1-4 years",
             "work_rights": "40 hrs/fortnight",
             "tuition_fee_range": "AUD 20,000 - 50,000/year"
+        },
+        {
+            "code": "ireland",
+            "name": "Ireland",
+            "flag": "🇮🇪",
+            "description": "English-speaking, friendly culture, and EU opportunities",
+            "top_universities": ["Trinity", "UCD", "Cork"],
+            "duration": "1-4 years",
+            "work_rights": "20 hrs/week",
+            "tuition_fee_range": "€10,000 - €25,000/year"
+        },
+        {
+            "code": "france",
+            "name": "France",
+            "flag": "🇫🇷",
+            "description": "Rich culture, excellent cuisine, and renowned universities",
+            "top_universities": ["Sorbonne", "Sciences Po"],
+            "duration": "1-5 years",
+            "work_rights": "20 hrs/week",
+            "tuition_fee_range": "€3,000 - €15,000/year"
+        },
+        {
+            "code": "sweden",
+            "name": "Sweden",
+            "flag": "🇸🇪",
+            "description": "Innovation hub, high quality of life, and sustainability focus",
+            "top_universities": ["KTH", "Lund", "Stockholm"],
+            "duration": "1-3 years",
+            "work_rights": "Part-time allowed",
+            "tuition_fee_range": "SEK 80,000 - 140,000/year"
+        },
+        {
+            "code": "new_zealand",
+            "name": "New Zealand",
+            "flag": "🇳🇿",
+            "description": "Stunning nature, peaceful environment, and quality education",
+            "top_universities": ["Auckland", "Otago"],
+            "duration": "1-4 years",
+            "work_rights": "20 hrs/week",
+            "tuition_fee_range": "NZD 22,000 - 35,000/year"
+        },
+        {
+            "code": "finland",
+            "name": "Finland",
+            "flag": "🇫🇮",
+            "description": "Top education system, innovation, and beautiful nature",
+            "top_universities": ["Helsinki", "Aalto"],
+            "duration": "2-5 years",
+            "work_rights": "25 hrs/week",
+            "tuition_fee_range": "€8,000 - €18,000/year"
+        },
+        {
+            "code": "singapore",
+            "name": "Singapore",
+            "flag": "🇸🇬",
+            "description": "Asia's education hub, multicultural, and business gateway",
+            "top_universities": ["NUS", "NTU", "SMU"],
+            "duration": "1-4 years",
+            "work_rights": "16 hrs/week",
+            "tuition_fee_range": "SGD 30,000 - 50,000/year"
+        },
+        {
+            "code": "japan",
+            "name": "Japan",
+            "flag": "🇯🇵",
+            "description": "Technology leader, rich culture, and unique experiences",
+            "top_universities": ["Tokyo", "Kyoto", "Waseda"],
+            "duration": "2-4 years",
+            "work_rights": "28 hrs/week",
+            "tuition_fee_range": "¥500,000 - ¥1,500,000/year"
+        },
+        {
+            "code": "south_korea",
+            "name": "South Korea",
+            "flag": "🇰🇷",
+            "description": "K-culture, technology innovation, and scholarships",
+            "top_universities": ["SNU", "KAIST", "Yonsei"],
+            "duration": "2-4 years",
+            "work_rights": "20 hrs/week",
+            "tuition_fee_range": "₩4,000,000 - ₩12,000,000/year"
+        },
+        {
+            "code": "italy",
+            "name": "Italy",
+            "flag": "🇮🇹",
+            "description": "Art, culture, history, and affordable European education",
+            "top_universities": ["Bocconi", "Bologna"],
+            "duration": "1-5 years",
+            "work_rights": "20 hrs/week",
+            "tuition_fee_range": "€1,000 - €4,000/year"
         }
     ]
     return {"countries": countries}
