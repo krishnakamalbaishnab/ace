@@ -92,21 +92,48 @@ if (form) {
             message: this.message.value
         };
 
-        // Send main email notification
+        // Simplified single email version for testing
+        console.log('Attempting to send email...', notificationParams);
+        
+        // Try sending just the main notification email first
         emailjs.send('service_ef4ba2l', 'template_9ouhuna', notificationParams)
-            .then(function() {
-                // Send auto-reply email
-                return emailjs.send('service_ef4ba2l', 'template_wqzp9ub', autoReplyParams);
-            })
-            .then(function() {
-                console.log('SUCCESS! Both emails sent');
-                // Show success message
+            .then(function(response) {
+                console.log('Email sent successfully!', response.status, response.text);
                 showNotification('Thank you! Your message has been sent successfully. We\'ll get back to you within 24 hours.', 'success');
                 form.reset();
             })
             .catch(function(error) {
-                console.log('FAILED...', error);
-                showNotification('There was an error sending your message. Please try again or contact us directly.', 'error');
+                console.error('Email sending failed:', error);
+                console.error('Error details:', {
+                    status: error.status,
+                    text: error.text,
+                    message: error.message
+                });
+                
+                // More detailed error message based on error type
+                let errorMessage = 'There was an error sending your message. ';
+                
+                if (error.status === 400) {
+                    errorMessage += 'Invalid request format. Please check all fields and try again.';
+                } else if (error.status === 401 || error.status === 403) {
+                    errorMessage += 'Service authentication failed. Please contact us directly.';
+                } else if (error.status === 404) {
+                    errorMessage += 'Email service configuration error. Please contact us directly.';
+                } else if (error.status >= 500) {
+                    errorMessage += 'Server error. Please try again in a few minutes.';
+                } else if (!navigator.onLine) {
+                    errorMessage += 'No internet connection. Please check your connection and try again.';
+                } else {
+                    errorMessage += 'Please try again or contact us directly at help.aceassignment@gmail.com or WhatsApp +44(0)7379343905';
+                }
+                
+                showNotification(errorMessage, 'error');
+                
+                // Show alternative contact methods in console for debugging
+                console.log('Alternative contact methods:', {
+                    email: 'help.aceassignment@gmail.com',
+                    whatsapp: '+44(0)7379343905'
+                });
             })
             .finally(function() {
                 submitButton.innerHTML = originalButtonText;
